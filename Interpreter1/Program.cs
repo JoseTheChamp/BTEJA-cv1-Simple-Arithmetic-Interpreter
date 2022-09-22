@@ -1,6 +1,6 @@
 ﻿
 using Interpreter1;
-
-Interpreter interpreter = new Interpreter("1+2*3*4-5");
+string vstup = "1+2*3*4-5";
+Interpreter interpreter = new Interpreter(vstup);
 interpreter.NactiVyraz();
-Console.WriteLine(interpreter.getResult());
+Console.WriteLine("Vysledek:  " + vstup + "  je " + interpreter.getResult());
